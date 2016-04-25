@@ -1,0 +1,2 @@
+
+int negate(int number);

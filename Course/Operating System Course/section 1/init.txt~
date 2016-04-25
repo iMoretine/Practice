@@ -1,0 +1,31 @@
+Process: 1
+run_time: 3
+I/O_time: <2,7>.
+
+Process: 2
+run_time: 5
+I/O_time: <3,10> <4,5>.
+
+Process: 3
+run_time: 10
+I/O_time: <2,5> <5,4> <8,12>.
+
+Process: 4
+run_time: 7
+I/O_time: <3,7> <6,9>.
+
+Process: 5
+run_time: 8
+I/O_time: <4,6>.
+
+Process: 6
+run_time: 15
+I/O_time: <4,5> <8,5> <12,8>.
+
+Process: 7
+run_time: 12
+I/O_time: <4,5> <7,10> <11,4>.
+
+Process: 8
+run_time: 15
+I/O_time: <4,5> <7,10> <11,4>.

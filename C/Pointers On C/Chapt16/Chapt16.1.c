@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main( int argc , char **argv )
+{
+	int age;
+	int radix;
+	div_t result;
+
+	if( argc != 2 )
+	{
+		fputs( "Usage: age_radix your-age\n", stderr );
+		exit( EXIT_FAILURE );
+	}
+
+	age = atoi( argv[1] );
+
+	for( radix = 2; radix <= 36; radix += 1)
+	{
+		result = div( age, radix );
+		if( result.quot <= 2 && result.rem <= 9)
+			break;
+	}
+
+	if( radix <= 36 )  
+	{
+		printf("Use radix %d when telling your age; "
+			"%d in base %d is %d%d\n",
+			radix, age, radix, result.quot, result.rem );
+		return EXIT_SUCCESS;
+	}
+	else
+	{
+		printf("Sorry, even in base 36 your age "
+			"is greater than 29!\n" );
+		return EXIT_FAILURE;
+	}
+}

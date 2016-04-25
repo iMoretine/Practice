@@ -1,0 +1,14 @@
+Process: 1
+ Segment: 1	Length(KB): 5
+ Segment: 2	Length(KB): 10
+ Segment: 3	Length(KB): 20 .
+
+Process: 2
+ Segment: 1	Length(KB): 10
+ Segment: 2	Length(KB): 4 .
+
+Process: 3
+ Segment: 1	Length(KB): 20
+ Segment: 2	Length(KB): 10
+ Segment: 3	Length(KB): 20
+ Segment: 4	Length(KB): 10 .
