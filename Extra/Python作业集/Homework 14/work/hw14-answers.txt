@@ -1,0 +1,46 @@
+A201 / Fall 2017
+Programming Assignment 12
+Name :
+IU account :
+
+For functiong recOne():
+    1. crashed.
+    2. 因为没有停止条件，函数recOne()会不断调用自己，直到程序崩溃
+    3. 任何自然数都会导致函数recOne()崩溃
+    4. 因为任何自然数都会导致函数recOne()崩溃，所有函数recOne()不会有输出
+
+For functiong recTwo():
+    1. crashed.
+    2. 因为没有停止条件，即使x变为负数，函数recTwo()也会不断调用自己，直到程序崩溃
+    3. 任何自然数都会导致函数recTwo()崩溃
+    4. 因为任何自然数都会导致函数recTwo()崩溃，所有函数recTwo()不会有输出
+
+For functiong recThree():
+    1. crashed.
+    2. 在条件if x == 0中，函数依然会调用自己，不会退出，所有程序最终会崩溃
+    3. 任何自然数都会导致函数recThree()崩溃
+    4. 因为任何自然数都会导致函数recThree()崩溃，所有函数recThree()不会有输出
+
+For functiong recFour():
+    1. 函数recFour()正常运行，并返回结果
+    2. 函数recFour()会被调用5次（包含用户调用的一次）
+    3. 任何自然数都将使函数recFour()返回一个值
+    4. 任何自然数都将使函数recFour()返回值0
+
+For functiong recFive():
+    1. 函数recFive()正常运行，并返回结果
+    2. 函数recFive()会被调用3次（包含用户调用的一次）
+    3. 任何自然数都将使函数recFive()返回一个值
+    4. 任何自然数都将使函数recFive()返回值0
+
+For functiong recSix():
+    1. 函数recSix()正常运行，并返回结果
+    2. 函数recSix()会被调用5次（包含用户调用的一次）
+    3. 任何自然数都将使函数recSix()返回一个值
+    4. 对于自然数n, 函数recSix(n)返回值2*n
+
+For functiong recSeven():
+    1. 函数recSeven()正常运行，并返回结果
+    2. 函数recSeven()会被调用5次（包含用户调用的一次）
+    3. 任何自然数都将使函数recSeven()返回一个值
+    4. 对于自然数n, 函数recSeven(n)返回1 + 2 + 3 + ... + n的和，即(1+n)*n/2

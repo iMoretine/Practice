@@ -1,0 +1,36 @@
+A201 / Fall 2017
+Programming Assignment 12
+Name :
+IU account :
+
+1. NameError - Try to access variables that have not been declare
+   IndexError - interview cross the border
+   ValueError - An improper data type in parameters
+   IOError - Input-output errors, such as the files to be read do not exist
+
+2. The first method:
+    try:
+        # some code
+    except Error1：
+        # some code
+    except Error2:
+        # some code
+    else:
+        # some code
+   The socond method:
+    try:
+        # some code
+    except (Error1, Error2) as e:
+        # some code
+
+3. (1)Trying to capture all exceptions can lead to performance degradation and slow down program.
+   (2)Trying to capture all exceptions may captured other unrelated exceptions, so hide the BUGs.
+
+4. A method of using exception parameters:
+    try:
+       # some code
+    except ExceptionType, Argument:
+       print("Error:", ExceptionType, Argument)
+
+5. (1)FileNotFoundError exception can be used when a file is read from the system while the file may not exist
+   (2)ValueError exceptions can be used when a user may enter an illegal value.

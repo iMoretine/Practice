@@ -1,0 +1,10 @@
+A201 / Fall 2017
+Programming Assignment 12
+Name :
+IU account :
+
+1. In the base case, the BNT is just a number, so it only contains 1 leaf nodes int this tree.
+2. tree[0] means the left subtree, tree[1] means the right subtree
+3. In the base case, the BNT is just a number, not a tuple, 所so it cannont use index to visit
+4. count_leaves(tree[0]) means count the total number of leaves in the left subtree，count_leaves(tree[1])means count the total number of leaves in the right subtree
+5. count_leaves(tree[0]) + count_leaves(tree[1]) means count the total number of leaves in the left subtree and the total number of leaves in the right subtree, the get the total number of leaves int current tree.
